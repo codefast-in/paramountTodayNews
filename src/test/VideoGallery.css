@@ -1,0 +1,34 @@
+.video-gallery {
+  display: flex;
+  flex-direction: row;
+  height: 100vh; /* Set height to viewport height */
+  overflow: hidden; /* Hide overflow to prevent page scrolling */
+}
+
+.video-thumbnails {
+  width: 20%; /* Adjust width as per your design */
+  overflow-y: auto; /* Enable vertical scrolling within thumbnails */
+  border-right: 1px solid #ccc; /* Optional: Add border for separation */
+}
+
+.video-thumbnails img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  padding: 8px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.video-thumbnails img.active {
+  opacity: 0.5; /* Example: Reduce opacity for active thumbnail */
+}
+
+.video-player {
+  width: 80%; /* Adjust width as per your design */
+  position: relative;
+}
+
+.video-player .player {
+  width: 100%;
+  height: 100%;
+}

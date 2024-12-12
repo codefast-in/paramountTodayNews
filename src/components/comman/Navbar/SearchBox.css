@@ -1,0 +1,18 @@
+/* SearchBox.css */
+.search-box-enter {
+  opacity: 0;
+}
+
+.search-box-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.search-box-exit {
+  opacity: 1;
+}
+
+.search-box-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
